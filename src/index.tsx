@@ -9,7 +9,6 @@ import Header from "./components/Header/Header";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
