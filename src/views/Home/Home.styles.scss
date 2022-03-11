@@ -1,8 +1,10 @@
+@import "/src/_variables.scss";
+
 .home {
   display: flex;
   flex-direction: column;
 
-  .home_container {
+  .home_snapshot-container {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -30,12 +32,12 @@
       right: 0;
       width: 50vw;
       height: 80vh;
-      background-color: #181823;
+      background-color: $primary-background-color;
       flex-direction: column;
       justify-content: center;
       font-size: 2rem;
       line-height: 68px;
-      font-family: Sen;
+      font-family: $primary-font-family;
       font-style: normal;
       font-weight: bold;
       padding-left: 8vw;
@@ -46,8 +48,13 @@
 
       p {
         z-index: 2;
-        color: #8491a0;
+        color: $secondary-font-color;
       }
     }
   }
+
+  .home_work-container {
+    height: calc(95vh - $headerHeight);
+  }
 }
+

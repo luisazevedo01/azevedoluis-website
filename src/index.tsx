@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./views/Home/Home";
 import Header from "./components/Header/Header";
@@ -9,6 +9,7 @@ import Header from "./components/Header/Header";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

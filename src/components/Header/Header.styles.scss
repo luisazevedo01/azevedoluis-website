@@ -1,8 +1,30 @@
-.header {
-    background-color: transparent;
+@import "/src/_variables.scss";
 
-    img {
-        border-radius: 50%;
-        margin: 5px;
+.header {
+  display: flex;
+  height: $headerHeight;
+  justify-content: space-between;
+  background-color: transparent;
+
+  ul {
+    list-style-type: none;
+    margin: auto 32px;
+
+    li {
+      display: inline;
+      padding: 0 32px;
+      cursor: pointer;
+
     }
+  }
+  .header_link {
+      &:hover {
+        text-decoration: underline;
+          transform: scale(1.2);
+      }
+  }
+
+  .header_signature {
+    margin: 8px 32px;
+  }
 }

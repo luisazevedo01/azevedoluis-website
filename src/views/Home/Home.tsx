@@ -1,13 +1,11 @@
-import Header from "../../components/Header/Header";
 import personalPicture from "../../assets/personal_picture.jpeg";
 import "./Home.styles.scss";
 
-//TODO: add picture, description and style
+//TODO: description
 const Home = () => {
   return (
     <div className="home">
-      <Header />
-      <div className="home_container">
+      <div className="home_snapshot-container">
         <section className="home_picture">
           <img src={personalPicture} />
         </section>

@@ -1,10 +1,17 @@
-import profileImage from "../../assets/pfp.gif";
+import { ReactComponent as SignatureIcon } from "../../assets/signature.svg";
 import "./Header.styles.scss";
 
 const Header = () => {
   return (
     <div className="header">
-      <img src={profileImage} width="80px" alt="Profile picture" />
+      <SignatureIcon className="header_signature" />
+      <ul>
+        <li>
+          <span className="header_link">Work</span>
+        </li>
+        <li>Experience</li>
+        <li>Contact</li>
+      </ul>
     </div>
   );
 };
