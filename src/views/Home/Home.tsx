@@ -64,16 +64,36 @@ const Home = () => {
       </div>
       <div className="home_values-container">
         <section>
-          <h1>Philosophy & values</h1>
+          <header>
+            <h1>Philosophy & Values</h1>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
+            ullamcorper dui. Curabitur vel dolor massa. Donec cursus viverra
+            nunc non feugiat. Suspendisse potenti. Morbi at felis ac orci luctus
+            lacinia sit amet nec nunc. Sed suscipit ullamcorper neque, sit amet
+            posuere nibh elementum eget. Praesent sit amet nisl sed est
+            facilisis accumsan. Morbi vitae ornare velit, sit amet eleifend
+            eros. Sed condimentum libero a dui sollicitudin, ac commodo odio
+            vehicula. Ut cursus ipsum vel nisl aliquam, a blandit ipsum
+            imperdiet.
+          </p>
         </section>
         <section>
           <img
             width="100%"
             height="100%"
-            src="https://armoredbasement.com/wp-content/uploads/2019/08/business-values.jpeg
+            src="https://lensvid.com/wp-content/uploads/2014/12/A-Different-Perspective-Photography-through-a-Glass-Ball-Nikon-I-AM-DIFFERENT-Latvia.jpg
 "
           />
         </section>
+      </div>
+      <div className="home_skillset-container">
+        <h1>Skillset</h1>
+      </div>
+      <div className="home_projects-container">
+        <h3>MY PROJECTS</h3>
+        <h1>Work I have done</h1>
       </div>
     </div>
   );

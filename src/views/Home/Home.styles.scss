@@ -96,17 +96,47 @@
   }
 
   .home_values-container {
-    height: 85vh;
+    height: 65vh;
     display: flex;
-
-    :first-child {
-      background-color: #fff3e4;
-    }
+    justify-content: stretch;
+    color: #181823;
 
     section {
-      min-width: 50vw;
+      width: 50vw;
+      background-color: #fff3e4;
+
+      &:first-child{
       text-align: center;
-      color: black;
+      padding: 64px;
+      }
+
+      p {
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #5b6876;
+      }
     }
+
+    header {
+      position: relative;
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 56px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .home_skillset-container {
+      height: 80vh;
+  }
+
+  .home_projects-container {
+      height: 80vh;
   }
 }
