@@ -5,6 +5,7 @@
   flex-direction: column;
 
   .home_snapshot-container {
+    height: 80vh;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -32,7 +33,7 @@
       right: 0;
       width: 50vw;
       height: 80vh;
-      background-color: $primary-background-color;
+      background-color: $secondary-background-color;
       flex-direction: column;
       justify-content: center;
       font-size: 2rem;
@@ -48,13 +49,64 @@
 
       p {
         z-index: 2;
+        font-size: medium;
         color: $secondary-font-color;
       }
     }
   }
 
   .home_work-container {
-    height: calc(95vh - $headerHeight);
+    height: 85vh;
+    padding: 64px;
+
+    header {
+      h5 {
+        width: 168px;
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+      }
+      h3 {
+        width: 700px;
+        font-family: "Sen";
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 66px;
+      }
+    }
+
+    #home_works {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-evenly;
+
+      span {
+        h1 {
+          font-size: 4rem;
+          color: lightgrey;
+        }
+      }
+    }
+
+    h5 {
+      color: lightgrey;
+    }
+  }
+
+  .home_values-container {
+    height: 85vh;
+    display: flex;
+
+    :first-child {
+      background-color: #fff3e4;
+    }
+
+    section {
+      min-width: 50vw;
+      text-align: center;
+      color: black;
+    }
   }
 }
-
