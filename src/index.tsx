@@ -5,6 +5,8 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./views/Home/Home";
 import Header from "./components/Header/Header";
+import Contact from "./views/Contact/Contact";
+import Blog from "./views/Blog/Blog";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +14,8 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

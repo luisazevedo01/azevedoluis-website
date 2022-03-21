@@ -1,8 +1,12 @@
 @import "/src/_variables.scss";
 
 .header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
   display: flex;
-  height: $headerHeight;
+  height: $header-height;
   justify-content: space-between;
   background-color: transparent;
 
@@ -16,18 +20,30 @@
       cursor: pointer;
     }
   }
+
   .header_link {
-      color: white;
+    color: white;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    font-weight: bold;
     font-size: 1.2rem;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 400;
 
     &:hover {
       text-decoration: underline;
       font-weight: bolder;
       font-size: 1.4rem;
     }
+  }
+
+  .header_link-active {
+    color: white;
+    font-family: "Sen";
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1.5rem;
   }
 
   .header_signature {
