@@ -14,14 +14,20 @@
       display: inline;
       padding: 0 32px;
       cursor: pointer;
-
     }
   }
   .header_link {
-      &:hover {
-        text-decoration: underline;
-          transform: scale(1.2);
-      }
+      color: white;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: bolder;
+      font-size: 1.4rem;
+    }
   }
 
   .header_signature {

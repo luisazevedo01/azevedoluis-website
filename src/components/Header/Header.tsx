@@ -1,16 +1,24 @@
+import { Link } from "react-router-dom";
 import { ReactComponent as SignatureIcon } from "../../assets/signature.svg";
 import "./Header.styles.scss";
 
 const Header = () => {
   return (
     <div className="header">
-      <SignatureIcon className="header_signature" />
+      <Link to="/">
+        <SignatureIcon className="header_signature" />
+      </Link>
       <ul>
         <li>
-          <span className="header_link">Work</span>
+          <Link className="header_link" to="/blog">
+            Blog
+          </Link>
         </li>
-        <li>Experience</li>
-        <li>Contact</li>
+        <li>
+          <Link className="header_link" to="/contact">
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );
