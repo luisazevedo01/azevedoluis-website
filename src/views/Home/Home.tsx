@@ -1,5 +1,10 @@
 import personalPicture from "../../assets/personal_picture.jpeg";
+import { ImHtmlFive2 } from "react-icons/im";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
 import "./Home.styles.scss";
+import Footer from "../../components/Footer/Footer";
 
 //TODO: description
 const Home = () => {
@@ -89,12 +94,50 @@ const Home = () => {
         </section>
       </div>
       <div className="home_skillset-container">
-        <h1>Skillset</h1>
+        <section className="skillset-intro">
+          <h1>Skillset</h1>
+          <p>
+            I'm currently focused on developing my skills regarding my current
+            tech stack but be sure that I still have plenty of energy left to
+            learn new technologies and development approaches.
+          </p>
+        </section>
+        <section className="skillset-skills">
+          <article>
+            <header>
+              <SiJavascript />
+              <h2>Javascript</h2>
+            </header>
+            <p>lorem ipsum</p>
+          </article>
+          <article>
+            <header>
+              <SiTypescript />
+              <h2>Typescript</h2>
+            </header>
+            <p>lorem ipsum</p>
+          </article>
+          <article>
+            <header>
+              <ImHtmlFive2 />
+              <h2>HTML</h2>
+            </header>
+            <p>lorem ipsum</p>
+          </article>
+          <article>
+            <header>
+              <SiCss3 />
+              <h2>CSS</h2>
+            </header>
+            <p>lorem ipsum</p>
+          </article>
+        </section>
       </div>
       <div className="home_projects-container">
-        <h3>MY PROJECTS</h3>
+        <h5>MY PROJECTS</h5>
         <h1>Work I have done</h1>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -57,20 +57,18 @@
 
   .home_work-container {
     height: 85vh;
+    font-family: "Sen";
     padding: 64px;
 
     header {
       h5 {
         width: 168px;
-        font-family: "Sen";
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 150%;
       }
       h3 {
         width: 700px;
-        font-family: "Sen";
         font-weight: 700;
         font-size: 55px;
         line-height: 66px;
@@ -105,9 +103,9 @@
       width: 50vw;
       background-color: #fff3e4;
 
-      &:first-child{
-      text-align: center;
-      padding: 64px;
+      &:first-child {
+        text-align: center;
+        padding: 64px;
       }
 
       p {
@@ -133,10 +131,63 @@
   }
 
   .home_skillset-container {
-      height: 80vh;
+    display: flex;
+    height: 65vh;
+    font-family: "Sen";
+
+    .skillset-intro {
+      flex-basis: 35%;
+      padding: 32px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 66px;
+      }
+
+      p {
+        margin: 16px;
+        color: $secondary-font-color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+
+    .skillset-skills {
+      flex-basis: 65%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 32px;
+
+      article {
+        flex-basis: 50%;
+
+        header {
+          display: flex;
+          align-items: center;
+          padding: 8px;
+
+          :last-child {
+            margin-left: 16px;
+            font-weight: 700;
+            font-size: 24px;
+          }
+        }
+
+        p {
+          color: $secondary-font-color;
+        }
+      }
+    }
   }
 
   .home_projects-container {
-      height: 80vh;
+    height: 80vh;
+    h5 {
+      width: 168px;
+      font-weight: 700;
+      font-size: 16px;
+    }
   }
 }
