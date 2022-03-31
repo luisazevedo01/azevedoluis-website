@@ -6,7 +6,7 @@ export default function Stack() {
   return (
     <div className="home_skillset-container">
       <section className="skillset-intro">
-        <h1>skillset</h1>
+        <h1>Stack</h1>
         <p>
           i'm currently focused on developing my skills regarding my current
           tech stack but be sure that i still have plenty of energy left to

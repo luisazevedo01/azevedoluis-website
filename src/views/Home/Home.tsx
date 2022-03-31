@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import Values from "./Values/Values";
 import Work from "./Work/Work";
 import Stack from "./Stack/Stack";
+import Projects from "./Projects/Projects";
 
 //TODO: description
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     <div className="home">
       <div className="home_snapshot-container">
         <section className="home_picture">
-          <img src={personalPicture} />
+          <img src={personalPicture} alt="Profile" />
         </section>
         <section className="home_description">
           <h1>
@@ -20,18 +21,14 @@ const Home = () => {
             <br /> based in Portugal.
           </h1>
           <p>
-            I'm a tenacious young junior developer whose pillow is the Clean
-            Code by our dear Uncle Bob.
+            I'm a tenacious young developer whose pillow is the Clean Code by
+            our dear Uncle Bob.
           </p>
         </section>
       </div>
       <Work />
       <Values />
       <Stack />
-      <div className="home_projects-container">
-        <h5>MY PROJECTS</h5>
-        <h1>Work I have done</h1>
-      </div>
       <Footer />
     </div>
   );
