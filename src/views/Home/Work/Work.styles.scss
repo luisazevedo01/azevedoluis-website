@@ -1,0 +1,37 @@
+.home_work-container {
+  height: 85vh;
+  font-family: "Sen";
+  padding: 64px;
+
+  header {
+    h5 {
+      width: 168px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    h3 {
+      width: 700px;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 66px;
+    }
+  }
+
+  #home_works {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-evenly;
+
+    span {
+      h1 {
+        font-size: 4rem;
+        color: lightgrey;
+      }
+    }
+  }
+
+  h5 {
+    color: lightgrey;
+  }
+}

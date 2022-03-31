@@ -1,0 +1,37 @@
+.home_values-container {
+    height: 65vh;
+    display: flex;
+    justify-content: stretch;
+    color: #181823;
+
+    section {
+      width: 50vw;
+      background-color: #fff3e4;
+
+      &:first-child {
+        text-align: center;
+        padding: 64px;
+      }
+
+      p {
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #5b6876;
+      }
+    }
+
+    header {
+      position: relative;
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 56px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+

@@ -1,0 +1,53 @@
+@import "/src/_variables.scss";
+
+.home_skillset-container {
+  display: flex;
+  height: 65vh;
+  font-family: "Sen";
+
+  .skillset-intro {
+    flex-basis: 35%;
+    padding: 32px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 66px;
+    }
+
+    p {
+      margin: 16px;
+      color: $secondary-font-color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
+  .skillset-skills {
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+
+    article {
+      flex-basis: 50%;
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+
+        :last-child {
+          margin-left: 16px;
+          font-weight: 700;
+          font-size: 24px;
+        }
+      }
+
+      p {
+        color: $secondary-font-color;
+      }
+    }
+  }
+}
