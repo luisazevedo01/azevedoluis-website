@@ -17,5 +17,5 @@ export default function StarScale({ level }: StarScaleProps) {
     stars.push(<AiFillStar key={i} color="yellow" />);
   }
 
-  return <Fragment>{stars}</Fragment>;
+  return <section>{stars}</section>;
 }

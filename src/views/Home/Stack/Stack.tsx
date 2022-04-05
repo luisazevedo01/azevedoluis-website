@@ -5,8 +5,8 @@ import "./Stack.styles.scss";
 
 export default function Stack() {
   return (
-    <div className="home_skillset-container">
-      <section className="skillset-intro">
+    <div className="stack-container">
+      <section className="stack-intro">
         <h1>Stack</h1>
         <p>
           I'm currently focused on developing my skills regarding my current
@@ -14,35 +14,38 @@ export default function Stack() {
           learn new technologies and development approaches.
         </p>
       </section>
-      <section className="skillset-skills">
-        <article>
+      <section className="stack-skills">
+        <div>
           <header>
             <SiJavascript />
             <h2>Javascript</h2>
           </header>
           <StarScale level={4} />
-        </article>
-        <article>
+        </div>
+
+        <div>
           <header>
             <SiTypescript />
             <h2>Typescript</h2>
           </header>
           <StarScale level={3} />
-        </article>
-        <article>
+        </div>
+
+        <div>
           <header>
             <ImHtmlFive2 />
             <h2>HTML</h2>
           </header>
-          <StarScale level={4} />
-        </article>
-        <article>
+          <StarScale level={3} />
+        </div>
+
+        <div>
           <header>
             <SiCss3 />
             <h2>CSS</h2>
           </header>
-          <StarScale level={4} />
-        </article>
+          <StarScale level={3} />
+        </div>
       </section>
     </div>
   );
