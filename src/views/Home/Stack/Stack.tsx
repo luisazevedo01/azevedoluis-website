@@ -1,5 +1,6 @@
 import { ImHtmlFive2 } from "react-icons/im";
 import { SiCss3, SiJavascript, SiTypescript } from "react-icons/si";
+import StarScale from "../../../components/StarScale/StarScale";
 import "./Stack.styles.scss";
 
 export default function Stack() {
@@ -8,7 +9,7 @@ export default function Stack() {
       <section className="skillset-intro">
         <h1>Stack</h1>
         <p>
-          i'm currently focused on developing my skills regarding my current
+          I'm currently focused on developing my skills regarding my current
           tech stack but be sure that i still have plenty of energy left to
           learn new technologies and development approaches.
         </p>
@@ -19,28 +20,28 @@ export default function Stack() {
             <SiJavascript />
             <h2>Javascript</h2>
           </header>
-          <p>lorem ipsum</p>
+          <StarScale level={4} />
         </article>
         <article>
           <header>
             <SiTypescript />
             <h2>Typescript</h2>
           </header>
-          <p>lorem ipsum</p>
+          <StarScale level={3} />
         </article>
         <article>
           <header>
             <ImHtmlFive2 />
             <h2>HTML</h2>
           </header>
-          <p>lorem ipsum</p>
+          <StarScale level={4} />
         </article>
         <article>
           <header>
             <SiCss3 />
             <h2>CSS</h2>
           </header>
-          <p>lorem ipsum</p>
+          <StarScale level={4} />
         </article>
       </section>
     </div>

@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import Values from "./Values/Values";
 import Work from "./Work/Work";
 import Stack from "./Stack/Stack";
-import Projects from "./Projects/Projects";
 
 //TODO: description
 const Home = () => {

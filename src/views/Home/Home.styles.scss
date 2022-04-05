@@ -13,12 +13,12 @@
     .home_picture {
       z-index: 1;
       padding-top: 12vh;
-      padding-left: 12vw;
+      padding-left: 10vw;
 
       img {
-        width: 480px;
+        width: 500px;
         opacity: 0.8;
-        border-radius: 5px;
+        border-radius: 16px;
 
         &:hover {
           opacity: 1;
