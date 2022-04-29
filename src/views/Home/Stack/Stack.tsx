@@ -1,5 +1,11 @@
 import { ImHtmlFive2 } from "react-icons/im";
-import { SiCss3, SiJavascript, SiTypescript } from "react-icons/si";
+import {
+  SiCss3,
+  SiMicrosoft,
+  SiJavascript,
+  SiJava,
+  SiTypescript,
+} from "react-icons/si";
 import StarScale from "../../../components/StarScale/StarScale";
 import "./Stack.styles.scss";
 
@@ -28,7 +34,7 @@ export default function Stack() {
             <SiTypescript />
             <h2>Typescript</h2>
           </header>
-          <StarScale level={3} />
+          <StarScale level={4} />
         </div>
 
         <div>
@@ -36,7 +42,7 @@ export default function Stack() {
             <ImHtmlFive2 />
             <h2>HTML</h2>
           </header>
-          <StarScale level={3} />
+          <StarScale level={4} />
         </div>
 
         <div>
@@ -44,7 +50,21 @@ export default function Stack() {
             <SiCss3 />
             <h2>CSS</h2>
           </header>
+          <StarScale level={4} />
+        </div>
+        <div>
+          <header>
+            <SiMicrosoft />
+            <h2>C# / .NET</h2>
+          </header>
           <StarScale level={3} />
+        </div>
+        <div>
+          <header>
+            <SiJava />
+            <h2>Java</h2>
+          </header>
+          <StarScale level={2} />
         </div>
       </section>
     </div>

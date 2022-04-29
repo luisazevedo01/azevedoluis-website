@@ -2,7 +2,8 @@
 
 .stack-container {
   display: flex;
-  height: 65vh;
+  align-items: center;
+  height: 54vh;
   font-family: "Sen";
 
   .stack-intro {
@@ -25,17 +26,18 @@
   }
 
   .stack-skills {
-    flex-basis: 60%;
+    flex-basis: 65%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
+    height: 60%;
     padding: 32px;
 
     div {
       border-bottom: 1px solid white;
       display: flex;
       justify-content: space-between;
+      margin: 4px;
       padding: 16px;
 
       header {

@@ -11,16 +11,27 @@ const Footer = () => {
         <header>
           <img src={NFTPfp} alt="NFT" />
           <section>
-            <BsLinkedin color="#0077B5" size="24px" />
-            <BsGithub size="24px" />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/luisgomesazevedo/"
+            >
+              <BsLinkedin color="#0077B5" size="24px" />
+            </a>
+            <a target="_blank" href="https://github.com/luisazevedo01">
+              <BsGithub color="white" size="24px" />
+            </a>
           </section>
         </header>
         <p>Not Copyright 2022 - Luís Azevedo. </p>
       </section>
       <section className="footer-container_nav">
         <ul>
-          <li>blog</li>
-          <li>contact</li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
       </section>
     </div>
