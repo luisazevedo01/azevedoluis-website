@@ -5,7 +5,9 @@ import {
   SiJavascript,
   SiJava,
   SiTypescript,
+  SiLinux,
 } from "react-icons/si";
+import { AiOutlineConsoleSql } from "react-icons/ai";
 import StarScale from "../../../components/StarScale/StarScale";
 import "./Stack.styles.scss";
 
@@ -63,6 +65,20 @@ export default function Stack() {
           <header>
             <SiJava />
             <h2>Java</h2>
+          </header>
+          <StarScale level={2} />
+        </div>
+        <div>
+          <header>
+            <AiOutlineConsoleSql />
+            <h2>SQL</h2>
+          </header>
+          <StarScale level={2} />
+        </div>
+        <div>
+          <header>
+            <SiLinux />
+            <h2>Linux</h2>
           </header>
           <StarScale level={2} />
         </div>

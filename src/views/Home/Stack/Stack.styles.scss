@@ -3,14 +3,15 @@
 .stack-container {
   display: flex;
   align-items: center;
-  height: 54vh;
+  height: 65vh;
   font-family: "Sen";
 
   .stack-intro {
     flex-basis: 35%;
-    padding: 32px;
+    padding: 64px;
 
     h1 {
+      margin: 0;
       font-weight: 700;
       font-size: 55px;
       line-height: 66px;
