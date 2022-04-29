@@ -27,16 +27,6 @@ const Header = () => {
             Blog
           </Link>
         </li>
-        <li>
-          <Link
-            to="/contact"
-            className={
-              active.includes("/contact") ? "header_link-active" : "header_link"
-            }
-          >
-            Contact
-          </Link>
-        </li>
       </ul>
     </div>
   );

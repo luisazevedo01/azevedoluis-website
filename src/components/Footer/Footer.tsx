@@ -2,6 +2,7 @@ import "./Footer.styles.scss";
 import NFTPfp from "../../assets/pfp.gif";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 //TODO: NFT as Logo
 const Footer = () => {
@@ -27,10 +28,7 @@ const Footer = () => {
       <section className="footer-container_nav">
         <ul>
           <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </section>
