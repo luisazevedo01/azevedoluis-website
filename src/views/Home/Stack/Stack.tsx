@@ -16,8 +16,8 @@ export default function Stack() {
         <h1>Stack</h1>
         <p>
           I'm currently focused on developing my skills regarding my current
-          tech stack but be sure that i still have plenty of energy left to
-          learn new technologies and development approaches.
+          tech stack and willing to learn new technologies and development
+          approaches.
         </p>
       </section>
       <section className="stack-skills">

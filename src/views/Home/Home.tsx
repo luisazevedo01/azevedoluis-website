@@ -1,9 +1,9 @@
 import personalPicture from "../../assets/personal_picture.jpeg";
 import "./Home.styles.scss";
 import Footer from "../../components/Footer/Footer";
-import Values from "./Values/Values";
 import Work from "./Work/Work";
 import Stack from "./Stack/Stack";
+import About from "./About/About";
 
 //TODO: description
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
         </section>
       </div>
       <Work />
-      <Values />
+      <About />
       <Stack />
       <Footer />
     </div>
