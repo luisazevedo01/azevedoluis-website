@@ -16,7 +16,7 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 19px;
       color: #5b6876;
     }
   }
@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 875px) {
   .home_values-container {
     position: relative;
     height: 65vh;

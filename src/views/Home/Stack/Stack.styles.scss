@@ -1,8 +1,63 @@
 @import "/src/_variables.scss";
-
-@media screen and (min-width: 500px) {
 .stack-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: "Sen";
+
+  .stack-intro {
+    padding: 16px;
+
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 66px;
+    }
+
+    p {
+      margin: 32px;
+      color: $secondary-font-color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+
+  .stack-skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 60%;
+    padding: 32px;
+
+    div {
+      border-bottom: 1px solid white;
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      margin: 4px;
+      padding: 16px;
+
+      header {
+        display: flex;
+        align-items: center;
+      }
+
+      h2 {
+        margin: 0 16px;
+      }
+    }
+
+    p {
+      color: $secondary-font-color;
+    }
+  }
+}
+@media screen and (min-width: 875px) {
+.stack-container {
+    flex-direction: row;
   align-items: center;
   height: 65vh;
   font-family: "Sen";
