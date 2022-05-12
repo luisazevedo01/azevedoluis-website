@@ -9,22 +9,18 @@ import About from "./About/About";
 const Home = () => {
   return (
     <div className="home">
-      <div className="home_snapshot-container">
-        <section className="home_picture">
-          <img src={personalPicture} alt="Profile" />
-        </section>
-        <section className="home_description">
-          <h1>
-            I'm Luís Azevedo.
-            <br /> A Software Developer
-            <br /> based in Portugal.
-          </h1>
-          <p>
-            I'm a tenacious young developer whose pillow is the Clean Code by
-            our dear Uncle Bob.
-          </p>
-        </section>
-      </div>
+      <section className="home_snapshot">
+        <img src={personalPicture} alt="Profile" />
+        <h1>
+          I'm Luís Azevedo.
+          <br /> A Software Developer
+          <br /> based in Portugal.
+        </h1>
+        <p>
+          I'm a tenacious young developer whose pillow is the Clean Code by our
+          dear Uncle Bob.
+        </p>
+      </section>
       <Work />
       <About />
       <Stack />

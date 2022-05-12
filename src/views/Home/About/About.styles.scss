@@ -1,4 +1,5 @@
-.home_values-container {
+@media screen and (min-width: 500px) {
+  .home_values-container {
     height: 65vh;
     display: flex;
     justify-content: stretch;
@@ -34,4 +35,4 @@
       justify-content: center;
     }
   }
-
+}

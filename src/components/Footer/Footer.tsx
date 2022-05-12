@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer-container">
       <section className="footer-container_copyrights">
         <header>
-          <img src={NFTPfp} alt="NFT" />
+          <img src={NFTPfp} width="40%" alt="NFT" />
           <section>
             <a
               target="_blank"

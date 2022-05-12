@@ -1,10 +1,9 @@
 @import "/src/_variables.scss";
 
 .header {
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: fixed;
   z-index: 100;
+  width: 100%;
   display: flex;
   height: $header-height;
   justify-content: space-between;

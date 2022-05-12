@@ -1,5 +1,6 @@
 @import "/src/_variables.scss";
 
+@media screen and (min-width: 500px) {
 .stack-container {
   display: flex;
   align-items: center;
@@ -56,4 +57,4 @@
       color: $secondary-font-color;
     }
   }
-}
+}}
