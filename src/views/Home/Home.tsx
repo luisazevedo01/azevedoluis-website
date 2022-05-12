@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="home">
       <section className="home_snapshot">
-        <img src={personalPicture} alt="Profile" />
+        <img src={personalPicture} width="100%" alt="Profile" />
         <h1>
           I'm Luís Azevedo.
           <br /> A Software Developer
