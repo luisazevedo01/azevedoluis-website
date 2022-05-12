@@ -19,7 +19,7 @@ const Header = () => {
       </Link>
       <ul>
         <li>
-          {!active.includes("/blog") ? (
+          {!active.includes("/blog") && (
             <Link
               className={
                 active.includes("/blog") ? "header_link-active" : "header_link"
@@ -27,10 +27,6 @@ const Header = () => {
               to="/blog"
             >
               Blog
-            </Link>
-          ) : (
-            <Link to="/">
-              <ImCross size="small" />
             </Link>
           )}
         </li>

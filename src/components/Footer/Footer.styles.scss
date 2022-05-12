@@ -1,24 +1,25 @@
 @import "/src/_variables.scss";
+.footer {
+  padding: 16px 32px;
+  background-color: $secondary-background-color;
 
-@media screen and (min-width: 500px) {
-  .footer-container {
-    height: 20vh;
-    background-color: $secondary-background-color;
-    padding: 32px 64px;
+  p {
+    color: $secondary-font-color;
+  }
+
+  &_container {
     display: flex;
+    flex-grow: 2;
 
-    &_copyrights {
+    .footer_socials {
       flex-basis: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      p {
-        color: $secondary-font-color;
-      }
-
       header {
         img {
+          width: 88px;
           border-radius: 50%;
         }
 
@@ -37,7 +38,7 @@
       }
     }
 
-    &_nav {
+    &-nav {
       flex-basis: 50%;
 
       ul {
@@ -55,6 +56,20 @@
             text-decoration: underline;
             font-size: larger;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .footer {
+    padding: 32px 64px;
+
+    &_socials {
+      header {
+        img {
+          width: 120px;
         }
       }
     }
