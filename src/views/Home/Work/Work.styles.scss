@@ -1,11 +1,12 @@
 .home_work-container {
-  height: 85vh;
+  height: 100%;
   font-family: "Sen";
   padding: 0 16px;
+  overflow: hidden;
 
   header {
     h5 {
-      font-size: 16px;
+      font-size: 14px;
     }
     h3 {
       font-size: 32px;
@@ -20,7 +21,7 @@
 
     span {
       h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 0;
         color: lightgrey;
       }
@@ -34,7 +35,7 @@
 
 @media screen and (min-width: 500px) {
   .home_work-container {
-    height: 85vh;
+    height: 80vh;
     font-family: "Sen";
     padding: 64px;
 
@@ -50,9 +51,8 @@
     }
 
     #home_works {
-      margin-top: 48px;
-      display: flex;
-      justify-content: space-evenly;
+      margin-top: 64px;
+      flex-direction: row;
 
       span {
         h1 {

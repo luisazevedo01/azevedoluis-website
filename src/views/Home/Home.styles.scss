@@ -9,6 +9,7 @@
   &_snapshot {
     position: relative;
     height: 80vh;
+    padding-bottom: 6%;
     background: linear-gradient(
       to bottom,
       $primary-background-color 30%,
@@ -36,7 +37,7 @@
     }
 
     p {
-      padding: 3vh 12px 0 12px;
+      padding: 8% 12px 0 12px;
       color: $secondary-font-color;
     }
   }
