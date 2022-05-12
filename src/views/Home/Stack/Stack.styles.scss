@@ -29,7 +29,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 60%;
     padding: 32px;
 
     div {
@@ -86,9 +85,9 @@
     flex-basis: 65%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 60%;
-    padding: 32px;
+    padding: 16px;
 
     div {
       border-bottom: 1px solid white;
