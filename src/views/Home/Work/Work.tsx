@@ -15,19 +15,22 @@ export default function Work() {
             Developer
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
-            ullamcorper dui.
+            Developing both frontend and backend features, creating SQL views,
+            and adapting the database architecture whenever necessary.
+            Identifying and creating issues based on documentation and customer
+            feedback.
           </p>
         </span>
         <span>
           <h1>02</h1>
           <h3>
             <span style={{ color: "#3CC74E" }}>Auroch</span>, Junior React
-            Developer
+            Developer / Co-founder
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
-            ullamcorper dui.
+            Discussion of products and ideas, understanding and defining
+            architectures based on the client's needs. Responsible for front-end
+            development.
           </p>
         </span>
         <span>
@@ -37,8 +40,8 @@ export default function Work() {
             Developer
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
-            ullamcorper dui.
+            Developing front-end features/solving bugs with React/NextJS, while
+            consuming data from various blockchains. Refactoring JSX to TSX.
           </p>
         </span>
       </section>
