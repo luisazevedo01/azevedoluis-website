@@ -8,13 +8,12 @@ export default function About() {
           <h1>About</h1>
         </header>
         <p>
-          I went to an intensive bootcamp where I was taught to be an
-          autodidact, with a lot left to learn, I uncovered a passion for
-          blockchain. Today I am a part of a DAO (Decentralized Autonomous
-          Organization) where I'm in close to the blockchain world! Since I
-          began gaining valuable digital skills, I've been able to make more
-          money, pursue passions that I care about, and, ultimately, enjoy
-          freedom and flexibility.
+          I went to an intensive Bootcamp where I learned to be an autodidact.
+          With a pile of energy to spare, I uncovered a passion for blockchain.
+          Today I am a part of a DAO(Decentralized Autonomous Organization)
+          where I'm close to the blockchain world. By being a part of the Front
+          End team developing new features with React while consuming data from
+          various blockchains!
         </p>
       </section>
       <section>
