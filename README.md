@@ -1,2 +1,3 @@
-TBD... Layout
+Welcome to my website. This is my website, here you can get to know me a little bit more. My background, soft and professional skills, etc...
+
 
