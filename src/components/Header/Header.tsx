@@ -11,12 +11,13 @@ const Header = () => {
   const [prevY, setPrevY] = useState<number>(0);
 
   const showHeader = () => {
-    window.scrollY > prevY ? setShow(false) : setShow(true);
+    if (window.scrollY > prevY) setShow(false);
+    if (window.scrollY <= prevY) setShow(true);
     setPrevY(window.scrollY);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", showHeader);
+    window.addEventListener("scroll", showHeader, { passive: true });
   });
 
   useEffect(() => {
