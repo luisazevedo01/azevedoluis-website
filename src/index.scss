@@ -5,6 +5,7 @@
 }
 
 body {
+  user-select: none;
   width: 100%;
   background-color: $primary-background-color;
   overflow-x: hidden;
