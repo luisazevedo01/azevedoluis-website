@@ -1,11 +1,12 @@
 import { Fragment, useEffect, useState } from "react";
-import { ImCross } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as SignatureIcon } from "../../assets/signature.svg";
 import "./Header.styles.scss";
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [active, setActive] = useState<string>("");
   const [show, setShow] = useState<boolean>(true);
   const [prevY, setPrevY] = useState<number>(0);
@@ -16,6 +17,10 @@ const Header = () => {
     setPrevY(window.scrollY);
   };
 
+  const handleSignature = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate("/");
+  };
   useEffect(() => {
     window.addEventListener("scroll", showHeader, { passive: true });
   });
@@ -28,23 +33,17 @@ const Header = () => {
     <Fragment>
       {show && (
         <div className="header">
-          <Link to="/">
+          <span onClick={handleSignature}>
             <SignatureIcon className="header_signature" />
-          </Link>
+          </span>
           <ul>
-            <li>
-              {!active.includes("/blog") && (
-                <Link
-                  className={
-                    active.includes("/blog")
-                      ? "header_link-active"
-                      : "header_link"
-                  }
-                  to="/blog"
-                >
-                  Blog
-                </Link>
-              )}
+            <li
+              className={
+                active.includes("/blog") ? "header_link-active" : "header_link"
+              }
+              onClick={(e) => navigate("/blog")}
+            >
+              Blog
             </li>
           </ul>
         </div>
