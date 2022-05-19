@@ -5,17 +5,25 @@ import Work from "./Work/Work";
 import Stack from "./Stack/Stack";
 import About from "./About/About";
 import { motion } from "framer-motion";
+import { PAGE_VARIANTS } from "../../constants";
 
 //TODO: description
 const Home = () => {
   return (
     <motion.div
       className="home"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.6 } }}
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={PAGE_VARIANTS}
     >
-      <section className="home_snapshot">
+      <motion.section
+        className="home_snapshot"
+        animate={{
+          opacity: [0, 1],
+          transition: { duration: 1.8 },
+        }}
+      >
         <img src={personalPicture} width="100%" alt="Profile" />
         <h1>
           I'm Luís Azevedo.
@@ -26,7 +34,7 @@ const Home = () => {
           I'm a tenacious young developer whose pillow is the Clean Code by our
           dear Uncle Bob.
         </p>
-      </section>
+      </motion.section>
       <Work />
       <About />
       <Stack />
