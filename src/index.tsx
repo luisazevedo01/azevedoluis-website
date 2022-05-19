@@ -1,20 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
-import Home from "./views/Home/Home";
 import Header from "./components/Header/Header";
-import Blog from "./views/Blog/Blog";
+import AnimatedRoutes from "./components/AnimatedRoutes/AnimatedRoutes";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-      </Routes>
+      <AnimatedRoutes />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

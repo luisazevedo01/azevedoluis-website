@@ -1,4 +1,5 @@
 import "./About.styles.scss";
+import { ReactComponent as Stack1 } from "../../../assets/stack-2.svg";
 
 export default function About() {
   return (
@@ -16,12 +17,16 @@ export default function About() {
         </p>
       </section>
       <section>
+        <Stack1 width="500px" />
+        {/*
         <img
           width="100%"
           height="100%"
           src="https://lensvid.com/wp-content/uploads/2014/12/A-Different-Perspective-Photography-through-a-Glass-Ball-Nikon-I-AM-DIFFERENT-Latvia.jpg
 "
         />
+
+          */}
       </section>
     </div>
   );
