@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 .home_work-container {
   height: 100%;
   font-family: "Sen";
@@ -21,6 +23,16 @@
 
     span {
       max-width: 90%;
+      border-radius: 10px;
+      padding: 8px;
+
+      &:hover {
+          background-color: $active-background-color;
+      }
+      h3 > span {
+          padding: 0;
+      }
+
       h1 {
         font-size: 3rem;
         margin: 0;

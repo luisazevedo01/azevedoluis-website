@@ -1,0 +1,7 @@
+@import "/src/_mixins";
+
+.stack_list {
+  ul {
+    @include list-reset;
+  }
+}

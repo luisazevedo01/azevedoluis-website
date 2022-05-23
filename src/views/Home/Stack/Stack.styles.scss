@@ -1,4 +1,5 @@
-@import "/src/_variables.scss";
+@import "/src/_variables";
+
 .stack-container {
   display: flex;
   flex-direction: column;
@@ -55,60 +56,60 @@
   }
 }
 @media screen and (min-width: 875px) {
-.stack-container {
+  .stack-container {
     flex-direction: row;
-  align-items: center;
-  height: 65vh;
-  font-family: "Sen";
+    align-items: center;
+    height: 65vh;
+    font-family: "Sen";
 
-  .stack-intro {
-    flex-basis: 35%;
-    padding: 64px;
+    .stack-intro {
+      flex-basis: 35%;
+      padding: 64px;
 
-    h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 55px;
-      line-height: 66px;
+      h1 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 66px;
+      }
+
+      p {
+        margin: 32px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+      }
     }
 
-    p {
-      margin: 32px;
-      color: $secondary-font-color;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 22px;
-    }
-  }
-
-  .stack-skills {
-    flex-basis: 65%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    height: 60%;
-    padding: 16px;
-
-    div {
-      border-bottom: 1px solid white;
+    .stack-skills {
+      flex-basis: 65%;
       display: flex;
+      flex-flow: column wrap;
       justify-content: space-between;
-      width: 42%;
-      margin: 4px;
+      height: 60%;
       padding: 16px;
 
-      header {
+      div {
+        border-bottom: 1px solid white;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        width: 42%;
+        margin: 4px;
+        padding: 16px;
+
+        header {
+          display: flex;
+          align-items: center;
+        }
+
+        h2 {
+          margin: 0 16px;
+        }
       }
 
-      h2 {
-        margin: 0 16px;
+      p {
+        color: $secondary-font-color;
       }
-    }
-
-    p {
-      color: $secondary-font-color;
     }
   }
-}}
+}

@@ -5,7 +5,15 @@ $white-color: #ffffff;
 
 $secondary-background-color: #181823;
 $primary-background-color: #1c1c1e;
+$active-background-color: #38383b;
 
 $secondary-font-color: #8491a0;
 
 $primary-font-family: Sen;
+
+@mixin list-reset {
+    padding: 0;
+    maring: 0;
+    list-style: none;
+    color: red;
+}

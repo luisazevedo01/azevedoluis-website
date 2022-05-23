@@ -16,18 +16,8 @@ export default function About() {
           Organization) where I'm close to the blockchain world.
         </p>
       </section>
-      <section>
-        <Stack1 width="500px" />
-        {/*
-        <img
-          width="100%"
-          height="100%"
-          src="https://lensvid.com/wp-content/uploads/2014/12/A-Different-Perspective-Photography-through-a-Glass-Ball-Nikon-I-AM-DIFFERENT-Latvia.jpg
-"
-        />
 
-          */}
-      </section>
+      <Stack1 width="80%" height="100%" />
     </div>
   );
 }

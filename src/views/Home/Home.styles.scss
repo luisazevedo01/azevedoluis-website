@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  animation: dropIn 1s;
 
   &_snapshot {
     position: relative;
@@ -57,7 +58,7 @@
       img {
         position: absolute;
         margin-top: 88px;
-        opacity: 0.8;
+        opacity: 0.9;
         left: 12vw;
         width: 500px;
         border-radius: 16px;
@@ -85,5 +86,16 @@
         width: 44vw;
       }
     }
+  }
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
