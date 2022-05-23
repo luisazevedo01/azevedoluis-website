@@ -7,13 +7,17 @@ interface StarScaleProps {
 }
 
 export default function StackList({ lstSkill }: StarScaleProps) {
-  console.log(lstSkill);
   return (
     <section className="stack_list">
       <ul>
-        {lstSkill.map((el) => (
-          <li>{el.title}</li>
-        ))}
+        {lstSkill.map(({ Icon, title }) => {
+          return (
+            <li>
+              <Icon />
+              <li>{title}</li>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

@@ -1,9 +1,14 @@
-  .home_projects-container {
-    height: 80vh;
-    h5 {
-      width: 168px;
-      font-weight: 700;
-      font-size: 16px;
-    }
+.home_projects-container {
+  display: flex;
+  flex-direction: column;
+
+  section {
+    display: flex;
   }
 
+  h5 {
+    width: 168px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
