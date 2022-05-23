@@ -1,14 +1,40 @@
 .home_projects-container {
   display: flex;
+  padding: 16px;
   flex-direction: column;
 
   section {
     display: flex;
   }
 
+  header {
+    h5 {
+      font-size: 14px;
+      color: lightgrey;
+    }
+    h3 {
+      font-size: 32px;
+    }
+  }
   h5 {
     width: 168px;
     font-weight: 700;
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .home_projects-container {
+    padding: 64px;
+    height: 80vh;
+
+    header {
+      h5 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 55px;
+      }
+    }
   }
 }

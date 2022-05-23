@@ -9,6 +9,7 @@
   header {
     h5 {
       font-size: 14px;
+      color: lightgrey;
     }
     h3 {
       font-size: 32px;
@@ -41,9 +42,6 @@
     }
   }
 
-  h5 {
-    color: lightgrey;
-  }
 }
 
 @media screen and (min-width: 875px) {
@@ -56,6 +54,7 @@
       h5 {
         font-style: normal;
         font-size: 16px;
+        color: lightgrey;
       }
       h3 {
         font-size: 55px;
@@ -74,10 +73,6 @@
           color: lightgrey;
         }
       }
-    }
-
-    h5 {
-      color: lightgrey;
     }
   }
 }

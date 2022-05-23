@@ -18,13 +18,11 @@
     li {
       display: inline;
       cursor: pointer;
-      animation: dropIn 1s;
     }
   }
 
   .header_link {
     color: white;
-    transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-size: 1.2rem;
     font-family: "Sen";
@@ -74,3 +72,4 @@
     opacity: 1;
   }
 }
+

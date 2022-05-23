@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="home_projects-container">
       <header>
-        <h5>MY PROJECTS</h5>
+        <h5>PROJECTS</h5>
         <h1>Work I have done</h1>
       </header>
       <section>
