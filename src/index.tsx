@@ -4,13 +4,13 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header/Header";
-import AnimatedRoutes from "./components/AnimatedRoutes/AnimatedRoutes";
+import AppRoutes from "./components/AppRoutes/AppRoutes";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <AnimatedRoutes />
+      <AppRoutes />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
