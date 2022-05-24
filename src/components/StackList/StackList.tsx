@@ -8,17 +8,15 @@ interface StarScaleProps {
 
 export default function StackList({ lstSkill }: StarScaleProps) {
   return (
-    <section className="stack_list">
-      <ul>
-        {lstSkill.map(({ Icon, title }) => {
-          return (
-            <li>
-              <Icon />
-              <li>{title}</li>
-            </li>
-          );
-        })}
-      </ul>
-    </section>
+    <div className="stack_list">
+      {lstSkill.map(({ Icon, title }) => {
+        return (
+          <span>
+            <Icon />
+            <h5>{title}</h5>
+          </span>
+        );
+      })}
+    </div>
   );
 }

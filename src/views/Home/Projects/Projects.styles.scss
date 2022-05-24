@@ -1,25 +1,23 @@
 .home_projects-container {
   display: flex;
-  padding: 16px;
   flex-direction: column;
+  padding: 16px;
 
   section {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   header {
     h5 {
       font-size: 14px;
+      font-family: "Sen";
       color: lightgrey;
     }
     h3 {
       font-size: 32px;
     }
-  }
-  h5 {
-    width: 168px;
-    font-weight: 700;
-    font-size: 16px;
   }
 }
 

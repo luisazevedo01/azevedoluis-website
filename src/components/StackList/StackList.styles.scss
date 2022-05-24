@@ -1,30 +1,116 @@
 @import "/src/_mixins";
 
 .stack_list {
+  position: relative;
   width: 100%;
   height: 100%;
-  margin: 16px;
 
-  ul {
+  span {
+    position: absolute;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    font-size: 28px;
-    line-height: 120%;
-    height: 100%;
-    @include list-reset;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+    width: 150px;
+    height: 32px;
+    background-color: #333;
+    border-left: 5px solid #222;
+    transform: rotate(5deg);
+    border: 1px solid #222;
 
-    :hover {
-      text-decoration: underline;
+    &:first-child {
+      top: 0;
+      left: 8%;
     }
 
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 8px;
-      padding: 8px;
-      width: 180px;
+    &:nth-child(2n) {
+      top: 1%;
+      right: 9%;
+      transform: rotate(-7deg);
+    }
+
+    &:nth-child(3n) {
+      top: 24%;
+      left: 38%;
+      transform: rotate(-7deg);
+    }
+    &:nth-child(4n) {
+      top: 42%;
+      left: 10%;
+      transform: rotate(7deg);
+    }
+
+    &:nth-child(5n) {
+      top: 44%;
+      right: 8%;
+      transform: rotate(9deg);
+    }
+
+    &:nth-child(6n) {
+      top: 69%;
+      left: 18%;
+      transform: rotate(-9deg);
+    }
+
+    &:last-child {
+      top: 65%;
+      right: 18%;
+      transform: rotate(9deg);
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      z-index: 10;
+    }
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .stack_list {
+    margin-top: 16%;
+    span {
+      &:first-child {
+        top: 0;
+        left: 16%;
+      }
+
+      &:nth-child(2n) {
+        top: 1%;
+        right: 22%;
+        transform: rotate(-7deg);
+      }
+
+      &:nth-child(3n) {
+        top: 18%;
+        left: 38%;
+        transform: rotate(-7deg);
+      }
+      &:nth-child(4n) {
+        top: 24%;
+        left: 10%;
+        transform: rotate(7deg);
+      }
+
+      &:nth-child(5n) {
+        top: 26%;
+        right: 15%;
+        transform: rotate(9deg);
+      }
+
+      &:nth-child(6n) {
+        top: 50%;
+        left: 23%;
+        transform: rotate(9deg);
+      }
+
+      &:last-child {
+        top: 50%;
+        right: 20%;
+        transform: rotate(9deg);
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }

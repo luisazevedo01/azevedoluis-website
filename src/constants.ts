@@ -10,11 +10,11 @@ import {
 import { Tech } from "./components/StackList/StackList";
 
 export const TECH_STACK: Array<Tech> = [
-  { title: "Javascript", Icon: SiJavascript },
-  { title: "Typescript", Icon: SiTypescript },
+  { title: "JAVASCRIPT", Icon: SiJavascript },
+  { title: "TYPESCRIPT", Icon: SiTypescript },
   { title: "HTML", Icon: ImHtmlFive2 },
   { title: "CSS", Icon: SiCss3 },
   { title: "C#", Icon: SiMicrosoft },
-  { title: "Java", Icon: SiJava },
+  { title: "JAVA", Icon: SiJava },
   { title: "SQL", Icon: AiOutlineConsoleSql },
 ];
