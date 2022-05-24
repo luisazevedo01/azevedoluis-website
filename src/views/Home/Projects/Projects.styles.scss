@@ -1,4 +1,5 @@
 .home_projects-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -7,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  overflow: scroll;
   }
 
   header {

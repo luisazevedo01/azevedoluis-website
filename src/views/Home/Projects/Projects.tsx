@@ -22,13 +22,11 @@ export default function Projects() {
           techStack={["HTML", "CSS"]}
           image={lenderImg}
         />
-        {
-          // <ProjectDisplay
-          //     name="FreeDev"
-          //     techStack={["HTML", "CSS"]}
-          //     image={freedevImg}
-          // />
-        }
+        <ProjectDisplay
+          name="FreeDev"
+          techStack={["HTML", "CSS"]}
+          image={freedevImg}
+        />
       </section>
     </div>
   );

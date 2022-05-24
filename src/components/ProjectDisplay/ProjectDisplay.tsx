@@ -18,9 +18,7 @@ const ProjectDisplay = ({ name, techStack, image }: ProjectDisplayProps) => {
       </header>
       <section>
         <img src={image} width="100%" />
-        {
-          // <TechTagList techList={techStack} />
-        }
+        <TechTagList techList={techStack} />
       </section>
     </div>
   );
