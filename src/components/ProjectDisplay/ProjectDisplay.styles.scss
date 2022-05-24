@@ -1,7 +1,20 @@
 .project_display {
-  padding: 8px;
   margin: 16px;
-  width: 220px;
-  height: 380px;
-  border: 1px solid red;
+  width: 40%;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.15);
+
+  header {
+    text-align: center;
+    height: 24px;
+    background-color: #ddd;
+    color: #6a6a6a;
+  }
+
+  section {
+    position: relative;
+    ul {
+      position: absolute;
+      color: black
+    }
+  }
 }

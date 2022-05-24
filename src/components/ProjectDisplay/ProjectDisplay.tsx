@@ -14,10 +14,14 @@ const ProjectDisplay = ({ name, techStack, image }: ProjectDisplayProps) => {
   return (
     <div className="project_display">
       <header>
-        <h1>{name}</h1>
+        <h4>{name}</h4>
       </header>
-      <img src={image} width="100%" />
-      <TechTagList techList={techStack} />
+      <section>
+        <img src={image} width="100%" />
+        {
+          // <TechTagList techList={techStack} />
+        }
+      </section>
     </div>
   );
 };
