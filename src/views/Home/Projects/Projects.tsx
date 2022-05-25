@@ -6,25 +6,25 @@ import freedevImg from "../../../assets/projects/freedev/landing_home.png";
 
 export default function Projects() {
   return (
-    <div className="home_projects-container">
+    <div className="home_projects">
       <header>
         <h5>PROJECTS</h5>
         <h3>My latest development portfolio projects.</h3>
       </header>
-      <section>
+      <section className="projects-container">
         <ProjectDisplay
           name="Aurochs"
-          techStack={["HTML", "CSS"]}
+          techStack={["HTML", "CSS", "JAVASCRIPT", "REACT"]}
           image={aurochsImg}
         />
         <ProjectDisplay
           name="Lender"
-          techStack={["HTML", "CSS"]}
+          techStack={["HTML", "SCSS", "JAVASCRIPT", "REACT"]}
           image={lenderImg}
         />
         <ProjectDisplay
           name="FreeDev"
-          techStack={["HTML", "CSS"]}
+          techStack={["HTML", "SCSS", "JAVASCRIPT", "REACT"]}
           image={freedevImg}
         />
       </section>

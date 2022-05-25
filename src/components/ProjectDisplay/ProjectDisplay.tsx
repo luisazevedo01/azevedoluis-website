@@ -26,7 +26,7 @@ const ProjectDisplay = ({ name, techStack, image }: ProjectDisplayProps) => {
 
 const TechTagList = ({ techList }: TechTagListProps) => {
   return (
-    <ul>
+    <ul className="tech_list">
       {techList.map((el) => (
         <li>{el}</li>
       ))}

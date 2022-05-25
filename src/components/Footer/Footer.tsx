@@ -27,9 +27,11 @@ const Footer = () => {
         </section>
         <section className="footer_container-nav">
           <ul>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
+            {
+              // <li>
+              // <Link to="/blog">Blog</Link>
+              // </li>
+            }
           </ul>
         </section>
       </div>

@@ -1,20 +1,59 @@
 .project_display {
   margin: 16px;
+  min-width: 280px;
   width: 40%;
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 8px 2px 0 rgba(0, 0, 0, 0.75);
 
   header {
     text-align: center;
     height: 24px;
     background-color: #ddd;
     color: #6a6a6a;
+    h4 {
+      margin: 0;
+    }
   }
 
   section {
     position: relative;
-    ul {
+
+    &::before {
+      content: "";
       position: absolute;
-      color: black
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75) inset;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &:hover {
+      .tech_list {
+        opacity: 1;
+      }
+    }
+
+    .tech_list {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      padding: 10%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+      font-family: MontSerrat, Tahoma, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 0.75em;
+      line-height: 1em;
+
+      li {
+        padding: 8px;
+        margin: 8px;
+        background-color: #222;
+        color: #999;
+      }
     }
   }
 }

@@ -37,14 +37,18 @@ const Header = () => {
             <SignatureIcon className="header_signature" />
           </span>
           <ul>
-            <li
-              className={
-                active.includes("/blog") ? "header_link-active" : "header_link"
-              }
-              onClick={(e) => navigate("/blog")}
-            >
-              Blog
-            </li>
+            {
+              // <li
+              //   className={
+              //     active.includes("/blog")
+              //       ? "header_link-active"
+              //       : "header_link"
+              //   }
+              //   onClick={(e) => navigate("/blog")}
+              // >
+              //   Blog
+              // </li>
+            }
           </ul>
         </div>
       )}
