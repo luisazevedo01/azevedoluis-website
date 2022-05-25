@@ -1,7 +1,6 @@
 .project_display {
   margin: 16px;
-  min-width: 280px;
-  width: 40%;
+  max-width: 45%;
   box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.75);
 
   header {
@@ -64,6 +63,12 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 875px){
+    .project_display {
+        max-width: 90%;
+    } 
 }
 
 @keyframes scaleIn {
