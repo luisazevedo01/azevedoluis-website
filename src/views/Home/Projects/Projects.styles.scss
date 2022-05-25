@@ -2,7 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 48px;
 
   .projects-container {
     display: flex;
@@ -10,14 +10,16 @@
     justify-content: center;
   }
 
-  header {
+  .home_header {
+    margin: 32px;
     h5 {
-      font-size: 14px;
+      font-size: 16px;
       font-family: "Sen";
       color: lightgrey;
     }
     h3 {
-      font-size: 32px;
+      font-size: 55px;
+      line-height: 66px;
     }
   }
 }

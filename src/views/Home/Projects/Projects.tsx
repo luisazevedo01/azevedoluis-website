@@ -8,7 +8,7 @@ import proTokens from "../../../assets/projects/olympus/pro_tokens.png";
 export default function Projects() {
   return (
     <div className="home_projects">
-      <header>
+      <header className="home_header">
         <h5>PROJECTS</h5>
         <h3>My latest development portfolio projects.</h3>
       </header>
