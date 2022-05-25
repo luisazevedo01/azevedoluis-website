@@ -3,6 +3,7 @@ import "./Projects.styles.scss";
 import lenderImg from "../../../assets/projects/lender/landing.png";
 import aurochsImg from "../../../assets/projects/aurochs/home_aurochs.png";
 import freedevImg from "../../../assets/projects/freedev/landing_home.png";
+import proTokens from "../../../assets/projects/olympus/pro_tokens.png";
 
 export default function Projects() {
   return (
@@ -26,6 +27,11 @@ export default function Projects() {
           name="FreeDev"
           techStack={["HTML", "SCSS", "JAVASCRIPT", "REACT"]}
           image={freedevImg}
+        />
+        <ProjectDisplay
+          name="OlympusPRO"
+          techStack={["HTML", "MUI", "TYPESCRIPT", "REACT", "JAVASCRIPT"]}
+          image={proTokens}
         />
       </section>
     </div>

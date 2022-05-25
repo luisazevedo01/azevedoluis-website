@@ -2,7 +2,7 @@
   margin: 16px;
   min-width: 280px;
   width: 40%;
-  box-shadow: 8px 8px 2px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.75);
 
   header {
     text-align: center;
@@ -16,6 +16,7 @@
 
   section {
     position: relative;
+    overflow: hidden;
 
     &::before {
       content: "";
@@ -30,6 +31,10 @@
     &:hover {
       .tech_list {
         opacity: 1;
+      }
+
+      img {
+        animation: scaleIn 1s;
       }
     }
 
@@ -58,5 +63,15 @@
         color: #999;
       }
     }
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    width: 100%;
+  }
+
+  to {
+    transform: scale(1.2);
   }
 }
