@@ -1,7 +1,7 @@
-.project_display {
+.project {
   margin: 16px;
   max-width: 45%;
-  box-shadow: 12px 12px 2px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 10px 5px 3px rgba(0, 0, 0, 0.85);
 
   header {
     text-align: center;
@@ -20,63 +20,94 @@
     &::before {
       content: "";
       position: absolute;
-      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75) inset;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
+    }
+
+    .project_fst-img {
+      position: absolute;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.45) inset;
     }
 
     &:hover {
       .tech_list {
         opacity: 1;
+        z-index: 3;
       }
 
-      img {
-        animation: scaleIn 1s;
+      .project_fst-img {
+        position: absolute;
+        animation: dropOff 0.7s;
+        top: 100%;
+      }
+
+      .project_lst-img {
+        opacity: 0.3;
+        animation: dropDown 0.7s;
       }
     }
+  }
 
-    .tech_list {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      padding: 10%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      list-style: none;
-      font-family: MontSerrat, Tahoma, Arial, sans-serif;
+  .tech_list {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    font-family: MontSerrat, Tahoma, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.65em;
+    line-height: .9em;
+
+    li {
+      padding: 8px;
+      margin: 8px;
+      background-color: #222;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+      color: #999;
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .project {
+    max-width: 90%;
+
+    .tech-list {
       font-weight: 700;
       font-size: 0.75em;
       line-height: 1em;
-
-      li {
-        padding: 8px;
-        margin: 8px;
-        background-color: #222;
-        color: #999;
-      }
     }
   }
 }
 
-@media screen and (max-width: 875px){
-    .project_display {
-        max-width: 90%;
-    } 
-}
-
-@keyframes scaleIn {
+@keyframes dropOff {
   from {
-    width: 100%;
+    top: 0;
   }
 
   to {
-    transform: scale(1.2);
+    top: 100%;
+  }
+}
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 0.3;
   }
 }

@@ -4,21 +4,28 @@ interface ProjectDisplayProps {
   name: string;
   techStack: Array<string>;
   image: string;
+  secondaryImg: string;
 }
 
 interface TechTagListProps {
   techList: Array<string>;
 }
 
-const ProjectDisplay = ({ name, techStack, image }: ProjectDisplayProps) => {
+const ProjectDisplay = ({
+  name,
+  techStack,
+  image,
+  secondaryImg,
+}: ProjectDisplayProps) => {
   return (
-    <div className="project_display">
+    <div className="project">
       <header>
         <h4>{name}</h4>
       </header>
       <section>
-        <img src={image} width="100%" />
+        <img className="project_fst-img" src={image} width="100%" />
         <TechTagList techList={techStack} />
+        <img className="project_lst-img" src={secondaryImg} width="100%" />
       </section>
     </div>
   );
