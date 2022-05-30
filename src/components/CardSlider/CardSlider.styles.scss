@@ -1,5 +1,6 @@
 .card-slider {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -18,7 +19,7 @@
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  transform: rotateY(30deg) translateZ(40px);
+  transform: rotateY(30deg) translateZ(60px);
 }
 .card:hover .card-bg {
   transform: rotateY(0deg);
@@ -40,7 +41,7 @@
   bottom: 16px;
   left: 35px;
   box-shadow: 0px 0px 10px #000;
-  transform: rotateY(30deg) translateZ(40px);
+  transform: rotateY(30deg) translateZ(60px);
 
   h3 {
       margin: 0;
@@ -50,4 +51,12 @@
       font-size: 12px;
   }
 
+}
+
+
+@media screen and (max-width: 875px){
+    .card-slider {
+        flex-direction: column;
+        align-items: center;
+    }
 }
