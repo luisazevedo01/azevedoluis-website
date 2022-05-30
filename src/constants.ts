@@ -7,7 +7,16 @@ import {
   SiJava,
   SiTypescript,
 } from "react-icons/si";
-import { Tech } from "./components/StackList/StackList";
+import lenderLanding from "./assets/projects/lender/landing.png";
+import lenderHowItWorks from "./assets/projects/lender/how-it-works.png";
+import homeAurochs from "./assets/projects/aurochs/home_aurochs.png";
+import meetAurochs from "./assets/projects/aurochs/meet_aurochs.png";
+import landingFd from "./assets/projects/freedev/landing_home.png";
+import howItWorksFd from "./assets/projects/freedev/how-it-works.png";
+
+import proPartners from "./assets/projects/olympus/pro_partners.png";
+import proTokens from "./assets/projects/olympus/pro_tokens.png";
+import { Project, Tech } from "./types";
 
 export const TECH_STACK: Array<Tech> = [
   { title: "JAVASCRIPT", Icon: SiJavascript },
@@ -17,4 +26,31 @@ export const TECH_STACK: Array<Tech> = [
   { title: "C#", Icon: SiMicrosoft },
   { title: "JAVA", Icon: SiJava },
   { title: "SQL", Icon: AiOutlineConsoleSql },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    title: "Aurochs",
+    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    img: homeAurochs,
+    secondaryImg: meetAurochs,
+  },
+  {
+    title: "Lender",
+    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    img: lenderLanding,
+    secondaryImg: lenderHowItWorks,
+  },
+  {
+    title: "FreeDev",
+    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    img: landingFd,
+    secondaryImg: howItWorksFd,
+  },
+  {
+    title: "OlympusPRO",
+    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    img: proTokens,
+    secondaryImg: proPartners,
+  },
 ];

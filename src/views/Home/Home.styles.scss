@@ -24,6 +24,7 @@
       margin-top: 20vh;
       width: 70%;
       border-radius: 16px;
+      animation: slideIn 1.5s;
     }
 
     h1 {
@@ -57,10 +58,11 @@
 
       img {
         position: absolute;
-        margin-top: 15vh;
+        margin-top: 12vh;
         opacity: 0.9;
         left: 12vw;
-        width: 35%;
+        width: 33%;
+        max-height: 90%;
         border-radius: 16px;
 
         &:hover {
@@ -98,4 +100,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+   
 }

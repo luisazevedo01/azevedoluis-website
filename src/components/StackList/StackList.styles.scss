@@ -19,7 +19,7 @@
     border: 1px solid #222;
 
     &:first-child {
-      top: 0;
+      top: 5%;
       left: 8%;
     }
 
@@ -47,14 +47,14 @@
     }
 
     &:nth-child(6n) {
-      top: 69%;
-      left: 18%;
+      top: 64%;
+      left: 12%;
       transform: rotate(-9deg);
     }
 
     &:last-child {
-      top: 65%;
-      right: 18%;
+      top: 72%;
+      right: 12%;
       transform: rotate(9deg);
     }
 

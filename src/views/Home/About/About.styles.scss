@@ -8,10 +8,9 @@
   font-family: "Sen";
 
   section {
-    &:first-child {
-      text-align: center;
-      padding: 16px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     p {
       margin: 18px;
@@ -25,12 +24,7 @@
   header {
     font-size: 32px;
     line-height: 56px;
-    display: flex;
-    justify-content: center;
-
-    h1 {
-      margin: 0;
-    }
+    text-align: center;
   }
 
   svg {
@@ -74,7 +68,7 @@
       justify-content: center;
 
       h1 {
-        margin: 32px 0;
+        margin: 0;
       }
     }
   }

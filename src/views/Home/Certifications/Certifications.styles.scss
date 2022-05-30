@@ -1,0 +1,16 @@
+.certifications {
+  margin: 32px;
+
+  &_header {
+    margin: 32px;
+    h5 {
+      font-size: 16px;
+      font-family: "Sen";
+      color: lightgrey;
+    }
+    h3 {
+      font-size: 55px;
+      line-height: 66px;
+    }
+  }
+}

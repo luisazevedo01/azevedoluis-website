@@ -34,8 +34,8 @@ const ProjectDisplay = ({
 const TechTagList = ({ techList }: TechTagListProps) => {
   return (
     <ul className="tech_list">
-      {techList.map((el) => (
-        <li>{el}</li>
+      {techList.map((tech: string, index) => (
+        <li key={index}>{tech}</li>
       ))}
     </ul>
   );
