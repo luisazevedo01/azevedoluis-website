@@ -13,10 +13,13 @@ import homeAurochs from "./assets/projects/aurochs/home_aurochs.png";
 import meetAurochs from "./assets/projects/aurochs/meet_aurochs.png";
 import landingFd from "./assets/projects/freedev/landing_home.png";
 import howItWorksFd from "./assets/projects/freedev/how-it-works.png";
-
 import proPartners from "./assets/projects/olympus/pro_partners.png";
 import proTokens from "./assets/projects/olympus/pro_tokens.png";
-import { Project, Tech } from "./types";
+
+import { GrCloudComputer } from "react-icons/gr";
+import { BiCodeBlock } from "react-icons/bi";
+
+import { Certificate, Project, Tech } from "./types";
 
 export const TECH_STACK: Array<Tech> = [
   { title: "JAVASCRIPT", Icon: SiJavascript },
@@ -52,5 +55,20 @@ export const PROJECTS: Project[] = [
     techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
     img: proTokens,
     secondaryImg: proPartners,
+  },
+];
+
+export const CERTIFICATIONS: Certificate[] = [
+  {
+    title: "AWS Cloud Practitioner",
+    description:
+      "Earning AWS Certified Cloud Practitioner validates cloud fluency and foundational AWS knowledge.",
+    Icon: GrCloudComputer,
+  },
+  {
+    title: "Academia de Código",
+    description:
+      "Intensive Programming Bootcamp Full-Stack, JAVA and JavaScript",
+    Icon: BiCodeBlock,
   },
 ];

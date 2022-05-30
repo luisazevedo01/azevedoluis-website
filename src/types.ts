@@ -7,4 +7,10 @@ export interface Project {
   secondaryImg: string;
 }
 
+export interface Certificate {
+  title: string;
+  description: string;
+  Icon: IconType;
+}
+
 export type Tech = { title: string; Icon: IconType };

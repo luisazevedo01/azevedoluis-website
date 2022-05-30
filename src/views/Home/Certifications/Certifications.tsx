@@ -1,4 +1,6 @@
 import CardSlider, { Card } from "../../../components/CardSlider/CardSlider";
+import { CERTIFICATIONS } from "../../../constants";
+import { Certificate } from "../../../types";
 import "./Certifications.styles.scss";
 
 const Certifications = () => {
@@ -10,10 +12,9 @@ const Certifications = () => {
       </header>
       <section className="certifications_container">
         <CardSlider>
-          <Card>
-            <h1>AWS Cloud Practitioner</h1>
-            <p>lorem CLF-C01</p>
-          </Card>
+          {CERTIFICATIONS.map((props: Certificate, index) => {
+            return <Card key={index} {...props} />;
+          })}
         </CardSlider>
       </section>
     </div>

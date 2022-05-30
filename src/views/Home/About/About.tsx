@@ -13,7 +13,8 @@ export default function About() {
           Bootcamp, where I learned the taste of code but specifically to be an
           autodidact. With a pile of energy to spare, I uncovered a passion for
           blockchain. Today I am a part of a DAO(Decentralized Autonomous
-          Organization) where I'm close to the blockchain world.
+          Organization) where I'm close to the blockchain world while developing
+          my frontend skills.
         </p>
       </section>
 
