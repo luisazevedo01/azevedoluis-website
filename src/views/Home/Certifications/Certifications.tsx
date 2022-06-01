@@ -7,8 +7,8 @@ const Certifications = () => {
   return (
     <div className="certifications">
       <header className="certifications_header">
-        <h5>CERTIFICATIONS</h5>
-        <h3>Some certifications I have received.</h3>
+        <h5>CERTIFICATES</h5>
+        <h3>Some of my badges.</h3>
       </header>
       <section className="certifications_container">
         <CardSlider>

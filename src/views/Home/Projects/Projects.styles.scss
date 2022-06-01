@@ -1,40 +1,43 @@
-.home_projects {
-  height: 100%;
+.projects {
   display: flex;
   flex-direction: column;
-  padding: 48px;
+  padding: 16px;
 
-  .projects-container {
+  &-container {
+    margin: 16px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .home_header {
-    margin: 32px;
+  &-header {
     h5 {
       font-size: 16px;
       font-family: "Sen";
       color: lightgrey;
     }
     h3 {
-      font-size: 55px;
-      line-height: 66px;
+      font-size: 32px;
     }
   }
 }
 
 @media screen and (min-width: 875px) {
-  .home_projects-container {
-    padding: 64px;
-    height: 80vh;
+  .projects {
+    padding: 0 64px;
+    max-height: 80vh;
 
-    header {
-      h5 {
-        font-size: 16px;
-      }
+    &-header {
       h3 {
         font-size: 55px;
+        line-height: 66px;
+      }
+    }
+
+    &-container {
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
   }

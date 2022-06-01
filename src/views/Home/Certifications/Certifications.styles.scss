@@ -1,20 +1,35 @@
 .certifications {
+  font-family: "Sen";
   margin: 32px;
 
   &_header {
-    margin: 32px;
     h5 {
       font-size: 16px;
-      font-family: "Sen";
       color: lightgrey;
     }
     h3 {
-      font-size: 55px;
-      line-height: 66px;
+      font-size: 32px;
     }
   }
 
   &_container {
-      margin: 32px 32px 0 32px;
+    margin-top: 32px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .certifications {
+    &_header {
+      margin: 32px;
+      h3 {
+        font-size: 55px;
+        line-height: 66px;
+      }
+    }
   }
 }

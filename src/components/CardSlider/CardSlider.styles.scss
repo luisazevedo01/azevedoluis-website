@@ -1,4 +1,5 @@
 .card-slider {
+  padding-left: 116px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -59,11 +60,3 @@
     font-size: 12px;
   }
 }
-
-@media screen and (max-width: 875px) {
-  .card-slider {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-

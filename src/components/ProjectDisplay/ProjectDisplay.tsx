@@ -23,9 +23,14 @@ const ProjectDisplay = ({
         <h4>{name}</h4>
       </header>
       <section>
-        <img className="project_fst-img" src={image} width="100%" />
+        <img className="project_fst-img" src={image} width="100%" alt={name} />
         <TechTagList techList={techStack} />
-        <img className="project_lst-img" src={secondaryImg} width="100%" />
+        <img
+          className="project_lst-img"
+          src={secondaryImg}
+          width="100%"
+          alt={`secondary${name}`}
+        />
       </section>
     </div>
   );

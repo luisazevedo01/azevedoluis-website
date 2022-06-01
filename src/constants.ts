@@ -7,14 +7,14 @@ import {
   SiJava,
   SiTypescript,
 } from "react-icons/si";
-import lenderLanding from "./assets/projects/lender/landing.png";
-import lenderHowItWorks from "./assets/projects/lender/how-it-works.png";
-import homeAurochs from "./assets/projects/aurochs/home_aurochs.png";
-import meetAurochs from "./assets/projects/aurochs/meet_aurochs.png";
-import landingFd from "./assets/projects/freedev/landing_home.png";
-import howItWorksFd from "./assets/projects/freedev/how-it-works.png";
-import proPartners from "./assets/projects/olympus/pro_partners.png";
-import proTokens from "./assets/projects/olympus/pro_tokens.png";
+import lenderLanding from "./assets/projects/lender/landing-min.png";
+import lenderHowItWorks from "./assets/projects/lender/how-it-works-min.png";
+import homeAurochs from "./assets/projects/aurochs/home_aurochs-min.png";
+import meetAurochs from "./assets/projects/aurochs/meet_aurochs-min.png";
+import landingFd from "./assets/projects/freedev/landing_home-min.png";
+import howItWorksFd from "./assets/projects/freedev/how-it-works-min.png";
+import proPartners from "./assets/projects/olympus/pro_partners-min.png";
+import proTokens from "./assets/projects/olympus/pro_tokens-min.png";
 
 import { GrCloudComputer } from "react-icons/gr";
 import { BiCodeBlock } from "react-icons/bi";
@@ -64,11 +64,5 @@ export const CERTIFICATIONS: Certificate[] = [
     description:
       "Earning AWS Certified Cloud Practitioner validates cloud fluency and foundational AWS knowledge.",
     Icon: GrCloudComputer,
-  },
-  {
-    title: "Academia de Código",
-    description:
-      "Intensive Programming Bootcamp Full-Stack, JAVA and JavaScript",
-    Icon: BiCodeBlock,
   },
 ];

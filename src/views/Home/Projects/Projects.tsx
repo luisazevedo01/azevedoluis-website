@@ -5,8 +5,8 @@ import { Project } from "../../../types";
 
 export default function Projects() {
   return (
-    <div className="home_projects">
-      <header className="home_header">
+    <div className="projects">
+      <header className="projects-header">
         <h5>PROJECTS</h5>
         <h3>My latest development portfolio projects.</h3>
       </header>
