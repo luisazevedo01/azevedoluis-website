@@ -46,13 +46,21 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "FreeDev",
-    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    techStack: ["HTML", "SCSS", "TYPESCRIPT", "STORYBOOK", "REACT"],
     img: landingFd,
     secondaryImg: howItWorksFd,
   },
   {
     title: "OlympusPRO",
-    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    techStack: [
+      "HTML",
+      "MUI",
+      "JAVASCRIPT",
+      "TYPESCRIPT",
+      "REACT",
+      "REDUX",
+      "ETHERJS",
+    ],
     img: proTokens,
     secondaryImg: proPartners,
   },
