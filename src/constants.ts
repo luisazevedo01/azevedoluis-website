@@ -40,13 +40,13 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Lender",
-    techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    techStack: ["HTML", "SCSS", "TYPESCRIPT", "STORYBOOK", "REACT"],
     img: lenderLanding,
     secondaryImg: lenderHowItWorks,
   },
   {
     title: "FreeDev",
-    techStack: ["HTML", "SCSS", "TYPESCRIPT", "STORYBOOK", "REACT"],
+    techStack: ["HTML", "SCSS", "JAVASCRIPT", "REACT"],
     img: landingFd,
     secondaryImg: howItWorksFd,
   },
