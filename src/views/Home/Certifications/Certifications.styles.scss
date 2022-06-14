@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 .certifications {
   font-family: "Sen";
   margin: 32px;
@@ -8,6 +10,7 @@
       color: lightgrey;
     }
     h3 {
+      font-family: $title-font-family;
       font-size: 32px;
     }
   }

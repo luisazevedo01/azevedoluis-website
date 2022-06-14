@@ -2,8 +2,14 @@ import ProjectDisplay from "../../../components/ProjectDisplay/ProjectDisplay";
 import "./Projects.styles.scss";
 import { PROJECTS } from "../../../constants";
 import { Project } from "../../../types";
+import { useNavigate } from "react-router-dom";
 
 export default function Projects() {
+  const navigate = useNavigate();
+  const handleNavigation = (title: string) => {
+    navigate(`/${title}`);
+  };
+
   return (
     <div className="projects">
       <header className="projects-header">
@@ -19,6 +25,7 @@ export default function Projects() {
                 name={title}
                 techStack={techStack}
                 image={img}
+                onClick={() => handleNavigation(title)}
                 secondaryImg={secondaryImg}
               />
             );

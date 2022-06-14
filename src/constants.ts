@@ -17,9 +17,28 @@ import proPartners from "./assets/projects/olympus/pro_partners-min.png";
 import proTokens from "./assets/projects/olympus/pro_tokens-min.png";
 
 import { GrCloudComputer } from "react-icons/gr";
-import { BiCodeBlock } from "react-icons/bi";
 
 import { Certificate, Project, Tech } from "./types";
+import { Work } from "./views/Home/Work/Work";
+
+export const WORK_EXPERIENCE: Array<Work> = [
+  {
+    title: `<span style="color:#609BFF">iTech-on</span>, Junior Fullstack Developer`,
+    description:
+      "Developing both frontend and backend features, creating SQL views, and adapting the database architecture whenever necessary. Identifying and creating issues based on documentation and customer feedback.",
+  },
+
+  {
+    title: `<span style="color:#3CC74E">Auroch</span>, Junior React Developer / Co-founder`,
+    description:
+      "Discussion of products and ideas, understanding and defining architectures based on the client's needs. Responsible for front-end development.",
+  },
+  {
+    title: `<span style="color:#E95D90">OlympusDAO</span>, React Developer`,
+    description:
+      "Developing front-end features/solving bugs with React/NextJS, while consuming data from various blockchains. Refactoring JSX to TSX.",
+  },
+];
 
 export const TECH_STACK: Array<Tech> = [
   { title: "JAVASCRIPT", Icon: SiJavascript },

@@ -13,6 +13,7 @@
     padding: 16px;
 
     h1 {
+      font-family: $title-font-family;
       margin: 0;
       font-weight: 700;
       font-size: 55px;
@@ -22,6 +23,7 @@
     p {
       margin: 32px;
       color: $secondary-font-color;
+      font-family: $secondary-font-family;
       font-style: normal;
       font-weight: 500;
       font-size: 22px;

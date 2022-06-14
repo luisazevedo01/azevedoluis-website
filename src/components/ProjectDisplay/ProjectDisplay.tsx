@@ -5,6 +5,7 @@ interface ProjectDisplayProps {
   techStack: Array<string>;
   image: string;
   secondaryImg: string;
+  onClick: () => void;
 }
 
 interface TechTagListProps {
@@ -16,13 +17,14 @@ const ProjectDisplay = ({
   techStack,
   image,
   secondaryImg,
+  onClick,
 }: ProjectDisplayProps) => {
   return (
     <div className="project">
       <header>
         <h4>{name}</h4>
       </header>
-      <section>
+      <section onClick={onClick}>
         <img className="project_fst-img" src={image} width="100%" alt={name} />
         <TechTagList techList={techStack} />
         <img

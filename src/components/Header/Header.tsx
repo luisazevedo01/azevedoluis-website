@@ -19,7 +19,7 @@ const Header = () => {
 
   const handleSignature = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate("/");
+    navigate("/", { replace: true });
   };
   useEffect(() => {
     window.addEventListener("scroll", showHeader, { passive: true });

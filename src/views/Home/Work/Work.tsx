@@ -1,4 +1,10 @@
+import { WORK_EXPERIENCE } from "../../../constants";
 import "./Work.styles.scss";
+
+export interface Work {
+  title: string;
+  description: string;
+}
 
 export default function Work() {
   return (
@@ -8,42 +14,15 @@ export default function Work() {
         <h3>Organizations I have worked for in the past.</h3>
       </header>
       <section id="home_works">
-        <span>
-          <h1>01</h1>
-          <h3>
-            <span style={{ color: "#609BFF" }}>iTech-on</span>, Junior Fullstack
-            Developer
-          </h3>
-          <p>
-            Developing both frontend and backend features, creating SQL views,
-            and adapting the database architecture whenever necessary.
-            Identifying and creating issues based on documentation and customer
-            feedback.
-          </p>
-        </span>
-        <span>
-          <h1>02</h1>
-          <h3>
-            <span style={{ color: "#3CC74E" }}>Auroch</span>, Junior React
-            Developer / Co-founder
-          </h3>
-          <p>
-            Discussion of products and ideas, understanding and defining
-            architectures based on the client's needs. Responsible for front-end
-            development.
-          </p>
-        </span>
-        <span>
-          <h1>03</h1>
-          <h3>
-            <span style={{ color: "#E95D90" }}>OlympusDAO</span>, React
-            Developer
-          </h3>
-          <p>
-            Developing front-end features/solving bugs with React/NextJS, while
-            consuming data from various blockchains. Refactoring JSX to TSX.
-          </p>
-        </span>
+        {WORK_EXPERIENCE.map((_work, index) => {
+          return (
+            <span key={index}>
+              <h1>0{index + 1}</h1>
+              <h2 dangerouslySetInnerHTML={{ __html: _work.title }}></h2>
+              <p>{_work.description}</p>
+            </span>
+          );
+        })}
       </section>
     </div>
   );

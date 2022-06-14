@@ -1,3 +1,5 @@
+@import "/src/variables.scss";
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@
       color: lightgrey;
     }
     h3 {
+      font-family: $title-font-family;
       font-size: 32px;
     }
   }

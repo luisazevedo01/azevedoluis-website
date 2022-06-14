@@ -2,17 +2,18 @@
 
 .home_work-container {
   height: 100%;
-  font-family: "Sen";
   padding: 16px;
   overflow: hidden;
 
   header {
     h5 {
+      font-family: $primary-font-family;
       font-size: 14px;
       color: lightgrey;
     }
     h3 {
       font-size: 32px;
+      font-family: $title-font-family;
     }
   }
 
@@ -27,18 +28,21 @@
       border-radius: 10px;
       padding: 8px;
 
-      h3 > span {
-          padding: 0;
-      }
-
       h1 {
         font-size: 3rem;
         margin: 0;
         color: lightgrey;
       }
+
+      h2 {
+          font-family: $primary-font-family;
+      }
+      p {
+        font-family: $secondary-font-family;
+        color: $secondary-font-color;
+      }
     }
   }
-
 }
 
 @media screen and (min-width: 875px) {

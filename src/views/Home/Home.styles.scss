@@ -31,11 +31,12 @@
       transform: translate(-50%, -50%);
       top: 88px;
       font-size: 1.8rem;
-      font-family: $primary-font-family;
+      font-family: $title-font-family;
     }
 
     p {
       color: $secondary-font-color;
+      font-family: $secondary-font-family;
     }
   }
 }
@@ -70,15 +71,13 @@
       h1 {
         top: 128px;
         left: 52vw;
-
         transform: translate(0, 0);
         font-size: 2rem;
         line-height: 64px;
-        font-family: $primary-font-family;
       }
 
       p {
-        bottom: 5vh;
+        bottom: 1vh;
         left: 52vw;
         position: absolute;
         line-height: 1.8rem;

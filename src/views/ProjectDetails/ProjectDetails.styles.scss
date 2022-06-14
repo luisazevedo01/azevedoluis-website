@@ -1,14 +1,31 @@
 @import "/src/_variables.scss";
 
-.blog {
+.project-details {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   animation: dropIn 1s;
-  &_report {
+  padding-top: $header-height;
+
+  header {
+      text-align: center;
+    h1 {
+      font-family: $title-font-family;
+      color: #c0c0c0;
+      text-decoration: underline;
+    }
+    h3 {
+      color: $secondary-font-color;
+      font-family: $secondary-font-family;
+    }
+  }
+
+  &_show-case {
     font-family: Sen;
+    display: flex;
+    overflow: scroll;
     border-radius: 50px;
     background: #1c1c1e;
     box-shadow: inset 26px -26px 42px #0e0e0f, inset -26px 26px 42px #2a2a2d;
@@ -20,8 +37,8 @@
     align-items: center;
 
     svg {
-        width: 200px;
-        height: 200px;
+      width: 200px;
+      height: 200px;
     }
 
     h1 {
