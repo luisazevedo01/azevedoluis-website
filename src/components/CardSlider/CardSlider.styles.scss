@@ -1,5 +1,4 @@
 .card-slider {
-  padding-left: 116px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -59,4 +58,12 @@
   p {
     font-size: 12px;
   }
+}
+
+
+@media screen and (min-width: 875px) {
+    .card-slider {
+        padding: 166px;
+    } 
+
 }
