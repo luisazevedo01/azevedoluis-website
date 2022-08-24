@@ -1,19 +1,23 @@
 import { useParams } from "react-router-dom";
 import "./ProjectDetails.styles.scss";
-import hiw from "../../assets/projects/freedev/how-it-works-min.png";
+import { Project } from "../../types";
+import { PROJECTS } from "../../constants";
 
 const ProjectDetails = () => {
   const params = useParams();
-  console.log("params: ", params.projectID);
+  const project = PROJECTS.find((el: Project) => el.title === params.projectID);
+
   return (
     <div className="project-details">
       <header>
-        <h1>{params.projectID}</h1>
-        <h3>Small intro about the project.</h3>
+        <h1>{project?.title}</h1>
       </header>
+      <section className="project-details_description">
+        <h3>{project?.description}</h3>
+      </section>
       <section className="project-details_show-case">
-        <img width="50%" height="100%" src={hiw} />
-        <img width="50%" height="100%" src={hiw} />
+        <img width="48%" height="100%" src={project?.img} />
+        <img width="48%" height="100%" src={project?.secondaryImg} />
       </section>
     </div>
   );

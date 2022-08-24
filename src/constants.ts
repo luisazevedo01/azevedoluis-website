@@ -53,24 +53,28 @@ export const TECH_STACK: Array<Tech> = [
 export const PROJECTS: Project[] = [
   {
     title: "Aurochs",
+    description: "Responsible for...(A)",
     techStack: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
     img: homeAurochs,
     secondaryImg: meetAurochs,
   },
   {
     title: "Lender",
+    description: "Responsible for... (L)",
     techStack: ["HTML", "SCSS", "TYPESCRIPT", "STORYBOOK", "REACT"],
     img: lenderLanding,
     secondaryImg: lenderHowItWorks,
   },
   {
     title: "FreeDev",
+    description: "Responsible for...",
     techStack: ["HTML", "SCSS", "JAVASCRIPT", "REACT"],
     img: landingFd,
     secondaryImg: howItWorksFd,
   },
   {
     title: "OlympusPRO",
+    description: "Responsible for...",
     techStack: [
       "HTML",
       "MUI",

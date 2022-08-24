@@ -109,8 +109,17 @@
         transform: rotate(9deg);
       }
       &:hover {
-        transform: scale(1.2);
+          animation: scaleIT 1s;
       }
     }
+  }
+}
+
+@keyframes scaleIT {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
   }
 }

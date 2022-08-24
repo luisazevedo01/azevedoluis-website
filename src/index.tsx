@@ -9,7 +9,6 @@ import AppRoutes from "./components/AppRoutes/AppRoutes";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
       <AppRoutes />
     </BrowserRouter>
   </React.StrictMode>,

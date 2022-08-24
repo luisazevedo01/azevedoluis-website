@@ -1,5 +1,6 @@
 import { Fragment, lazy, Suspense, useEffect } from "react";
 import personalPicture from "../../assets/personal_picture.jpeg";
+import Header from "../../components/Header/Header";
 import Loader from "../../components/Loader/Loader";
 import "./Home.styles.scss";
 const Footer = lazy(() => import("../../components/Footer/Footer"));
