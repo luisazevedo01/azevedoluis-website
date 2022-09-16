@@ -6,7 +6,9 @@ import { PROJECTS } from "../../constants";
 const ProjectDetails = () => {
   const params = useParams();
   const project = PROJECTS.find((el: Project) => el.title === params.projectID);
+  const windowSize = window.innerWidth;
 
+  console.log(windowSize);
   return (
     <div className="project-details">
       <header>
@@ -15,9 +17,13 @@ const ProjectDetails = () => {
       <section className="project-details_description">
         <h3>{project?.description}</h3>
       </section>
+      <hr />
       <section className="project-details_show-case">
-        <img width="48%" height="100%" src={project?.img} />
-        <img width="48%" height="100%" src={project?.secondaryImg} />
+        <img width="100%" src={project?.img} />
+        <img width="100%" src={project?.secondaryImg} />
+      </section>
+      <section>
+        <p>tech</p>
       </section>
     </div>
   );

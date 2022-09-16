@@ -9,6 +9,10 @@
   animation: dropIn 1s;
   padding-top: $header-height;
 
+  hr {
+    width: 80%;
+  }
+
   header {
     text-align: center;
 
@@ -23,32 +27,52 @@
     font-family: Sen;
     text-align: center;
     width: 80vw;
-    min-height: 4rem;
-    border-radius: 50px;
-    background: #1c1c1e;
-    box-shadow: inset 26px -26px 42px #0e0e0f, inset -26px 26px 42px #2a2a2d;
 
     h3 {
       color: $secondary-font-color;
       font-family: $secondary-font-family;
+      font-size: 1em;
     }
   }
 
   &_show-case {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     margin: 3rem;
-    gap: 5px;
+    gap: 15px;
 
     img {
       border-radius: 15px;
+      width: 100%;
     }
   }
 }
 
 @media screen and (min-width: 875px) {
-  .blog_report {
-    width: 70vw;
+  .project-details {
+    justify-content: space-around;
+
+    &_description {
+
+      h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    &_show-case {
+      flex-direction: row;
+      gap: 2%;
+
+      img {
+        width: 48%;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
   }
 }
 
